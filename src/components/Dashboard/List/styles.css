@@ -1,0 +1,77 @@
+.list_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.list_row:hover {
+  background-color: var(--darkgrey);
+
+  transform: all 0.3s;
+}
+.list_row td {
+  text-align: left;
+  width: 10%;
+}
+.td_img {
+  width: 3rem !important;
+  margin-right: 2rem;
+}
+.td_right {
+  text-align: right;
+}
+.td_center {
+  text-align: center;
+}
+.mobile_style {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .td_icon {
+    display: none;
+  }
+  .desktop_style {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .td_current_price {
+    min-width: 120px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .mobile_style {
+    display: block;
+  }
+  .mobile_style p {
+    font-size: 14px;
+  }
+  .td_total_volume {
+    display: none;
+  }
+  .mobile_image {
+    width: 35px;
+    height: 35px;
+  }
+  .list_row {
+    margin: 10px !important;
+    padding: 0px !important;
+  }
+
+  .name_col p {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .price_chip {
+    width: 20px;
+    height: 10px;
+    font-size: 10px;
+    padding: 4px;
+  }
+  .td_current_price {
+    font-size: 14px;
+  }
+}
